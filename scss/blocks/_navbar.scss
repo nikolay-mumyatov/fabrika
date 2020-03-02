@@ -1,0 +1,108 @@
+.menu{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    padding: 16px 0;
+    background-color: $primary;
+    transition: 0.4s all;
+    transform: translateY(-100%);
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .menu__link{
+            text-decoration: none;
+            font-size: 17px;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+}
+
+.menu_active{
+    transform: translateY(0);
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    &-wrap {
+        display: flex;
+        align-items: center;
+        min-height: 80px;
+        justify-content: space-between;
+    }
+    
+    .menu-button {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: transparent;
+        border: none;
+        border-right: 1px solid rgba($color: #510bba, $alpha: 0.1);
+        border-left: 1px solid rgba($color: #510bba, $alpha: 0.1);
+        height: 80px;
+        width: 70px;
+        outline: none;
+        .menu-button__line {
+            display: block;
+            width: 20px;
+            height: 3px;
+            background-color: #89a9eb;
+            margin-bottom: 4px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    .logo {
+        .logo__text {
+            display: block;
+            font-size: 18px;
+            text-transform: uppercase;
+            @include bold;
+            margin-bottom: 5px;
+        }
+        .logo__description {
+            display: block;
+            font-size: 14px;
+            color: #6b6b6b;
+        }
+    }
+
+    .mobile {
+        text-align: right;
+        .mobile__phone {
+            display: block;
+            font-size: 19px;
+            @include bold;
+            text-decoration: none;
+            color: $text-color;
+        }
+        .mobile__work-time {
+            color: $text-color-light;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .mobile__work-email {
+            color: $text-color-light;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    }
+    
+    .button-o {
+        border: 2px solid $primary;
+        text-transform: uppercase;
+        font-size: 12px;
+        @include bold;
+        color: $primary;
+        padding: 17px 22px;
+    }
+}

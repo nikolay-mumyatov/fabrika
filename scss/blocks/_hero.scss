@@ -1,0 +1,25 @@
+.hero{
+    background: #f1f1f1 url('../img/hero/hero-top-bacground.png') no-repeat center top 80px;
+    background-size: contain;
+    padding-top: 180px;
+    padding-bottom: 270px;
+    .hero-title{
+        max-width: 260px;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    &__subtitle{
+        display: block;
+        margin-bottom: 67px;
+        font-size: 30px;
+        @include bold;
+    }
+    .button{
+        padding: 25px 45px;
+        text-transform: uppercase;
+        border: none;
+        background-color: $primary;
+        color: white;
+        @include bold;
+    }
+}
