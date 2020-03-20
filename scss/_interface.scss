@@ -1,0 +1,25 @@
+
+
+.button{
+    padding: 25px 45px;
+    text-transform: uppercase;
+    border: none;
+    background-color: $primary;
+    color: white;
+    @include bold;
+}
+
+.input {
+    height: 80px;
+    padding-left: 30px;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.bg-secondary {
+    background-color: $bg-secondary;
+}

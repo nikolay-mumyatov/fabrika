@@ -1,0 +1,82 @@
+
+.offer {
+    padding: 129px 0;
+    .container {
+        .offer-block {
+            background: #ffffff url(../../img/offer/offer-bg.png) no-repeat center right;
+            background-size: contain;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+            padding: 80px;
+            margin-top: -230px;
+
+            &__title {
+                font-size: 25px;
+                @include bold;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+
+            &__subtitle {
+                font-size: 21px;
+                display: block;
+                margin-bottom: 48px;
+            }
+        }
+        .form {
+            .form__row {
+                display: flex;
+                align-items: center;
+                max-width: 900px;
+                margin-bottom: 25px;
+                &last-child{
+                    margin-bottom: 0px;
+                }
+                .form__group {
+                    flex-basis: 33.33%;
+                    .form__label {
+                        font-size: 16px;
+                        display: block;
+                        margin-bottom: 15px;
+                    }
+                    .form__input {
+                        width: 100%;
+                        border-right-width: 0px;
+                        &:last-child{
+                            border-right-width: 1px;
+                        }
+                    }
+                    .form-btn{
+                       height: 80px;
+                       width: 100%; 
+                    }
+                }
+                .form__checbox{
+                    &:first-child{
+                        margin-right: 42px;
+                    }
+                    .form__label-checkbox{
+                        display: flex;
+                        align-items: center;
+                        &:before{
+                            content: '';
+                            display: inline-block;
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid #dddddd;
+                            margin-right: 20px;
+                        }
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    
+                    input[type=checkbox]{
+                        &:checked + .form__label-checkbox:before {
+                            background-color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
