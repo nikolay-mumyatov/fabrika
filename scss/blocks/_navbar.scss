@@ -17,6 +17,9 @@
             font-size: 17px;
             text-transform: uppercase;
             color: white;
+            &:hover{
+                color: black;
+            }
         }
     }
 }

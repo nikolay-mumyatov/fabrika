@@ -23,3 +23,20 @@ input[type=checkbox]{
 .bg-secondary {
     background-color: $bg-secondary;
 }
+
+
+
+// Адаптивная верстка.
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .input{
+        height: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .input{
+        height: 40px;
+        padding-left: 15px;
+    }
+}
