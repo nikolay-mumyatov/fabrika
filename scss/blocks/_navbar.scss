@@ -1,17 +1,17 @@
-
 .navbar {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     background-color: white;
+
     &-wrap {
         display: flex;
         align-items: center;
         min-height: 80px;
         justify-content: space-between;
     }
-    
+
     .menu-button {
         display: flex;
         align-items: center;
@@ -24,18 +24,20 @@
         height: 80px;
         width: 70px;
         outline: none;
+
         .menu-button__line {
             display: block;
             width: 20px;
             height: 3px;
             background-color: #89a9eb;
             margin-bottom: 4px;
-            &:last-child{
+
+            &:last-child {
                 margin-bottom: 0;
             }
         }
     }
-    
+
     .logo {
         .logo__text {
             display: block;
@@ -44,6 +46,7 @@
             @include bold;
             margin-bottom: 5px;
         }
+
         .logo__description {
             display: block;
             font-size: 14px;
@@ -53,6 +56,7 @@
 
     .mobile {
         text-align: right;
+
         .mobile__phone {
             display: block;
             font-size: 19px;
@@ -60,18 +64,20 @@
             text-decoration: none;
             color: $text-color;
         }
+
         .mobile__work-time {
             color: $text-color-light;
             text-decoration: none;
             font-size: 14px;
         }
+
         .mobile__work-email {
             color: $text-color-light;
             text-decoration: none;
             font-size: 14px;
         }
     }
-    
+
     .button-o {
         border: 2px solid $primary;
         text-transform: uppercase;
@@ -86,9 +92,9 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-    .navbar{
-        .navbar-wrap{
-            .mobile-none{
+    .navbar {
+        .navbar-wrap {
+            .mobile-none {
                 display: none;
             }
         }
@@ -97,16 +103,18 @@
 
 @media (max-width: 767px) {
 
-    .navbar-wrap{
-        .mobile{
+    .navbar-wrap {
+        .mobile {
             display: none;
         }
 
         .navbar__logo {
             margin-left: 6px;
+
             .logo__text {
                 font-size: 14px;
             }
+
             .logo__description {
                 font-size: 12px;
             }
@@ -116,16 +124,19 @@
 
 @media (max-width: 525px) {
 
-    .navbar-wrap{
+    .navbar-wrap {
         justify-content: flex-start;
-        .navbar__button{
+
+        .navbar__button {
             display: none;
         }
 
         .navbar__logo {
             margin-left: 20px;
-            .logo__text{
-                font-size: 18px;            }
+
+            .logo__text {
+                font-size: 18px;
+            }
         }
     }
 }

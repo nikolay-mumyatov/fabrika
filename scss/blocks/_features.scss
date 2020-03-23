@@ -1,9 +1,10 @@
-.features{
-    &-block{
+.features {
+    &-block {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        &__item{
+
+        &__item {
             flex-basis: 33%;
             text-align: center;
             margin-bottom: 100px;
@@ -14,9 +15,9 @@
 // Адаптивная верстка.
 
 @media (max-width: 768px) {
-    .features{
-        &-block{
-            &__item{
+    .features {
+        &-block {
+            &__item {
                 flex-basis: 50%;
             }
         }
@@ -24,9 +25,9 @@
 }
 
 @media (max-width: 424px) {
-    .features{
-        &-block{
-            &__item{
+    .features {
+        &-block {
+            &__item {
                 flex-basis: 100%;
             }
         }

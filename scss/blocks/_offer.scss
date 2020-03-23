@@ -1,6 +1,6 @@
-
 .offer {
     padding: 129px 0;
+
     .container {
         .offer-block {
             background: #ffffff url(../../img/offer/offer-bg.png) no-repeat center right;
@@ -22,42 +22,52 @@
                 margin-bottom: 48px;
             }
         }
+
         .form {
             .form__row {
                 display: flex;
                 align-items: center;
                 max-width: 900px;
                 margin-bottom: 25px;
-                &last-child{
+
+                &last-child {
                     margin-bottom: 0px;
                 }
+
                 .form__group {
                     flex-basis: 33.33%;
+
                     .form__label {
                         font-size: 16px;
                         display: block;
                         margin-bottom: 15px;
                     }
+
                     .form__input {
                         width: 100%;
                         border-right-width: 0px;
-                        &:last-child{
+
+                        &:last-child {
                             border-right-width: 1px;
                         }
                     }
-                    .form-btn{
-                       height: 80px;
-                       width: 100%; 
+
+                    .form-btn {
+                        height: 80px;
+                        width: 100%;
                     }
                 }
-                .form__checbox{
-                    &:first-child{
+
+                .form__checbox {
+                    &:first-child {
                         margin-right: 42px;
                     }
-                    .form__label-checkbox{
+
+                    .form__label-checkbox {
                         display: flex;
                         align-items: center;
-                        &:before{
+
+                        &:before {
                             content: '';
                             display: inline-block;
                             width: 30px;
@@ -65,13 +75,14 @@
                             border: 1px solid #dddddd;
                             margin-right: 20px;
                         }
-                        &:hover{
+
+                        &:hover {
                             cursor: pointer;
                         }
                     }
-                    
-                    input[type=checkbox]{
-                        &:checked + .form__label-checkbox:before {
+
+                    input[type=checkbox] {
+                        &:checked+.form__label-checkbox:before {
                             background-color: $primary;
                         }
                     }
@@ -89,9 +100,10 @@
         .container {
             .offer-block {
                 background-position-x: 650px;
-                .form__row{
-                    .form__group{
-                        .form-btn{
+
+                .form__row {
+                    .form__group {
+                        .form-btn {
                             height: 80px;
                         }
                     }
@@ -107,9 +119,10 @@
             .offer-block {
                 padding: 60px 80px;
                 background-position-x: 72vw;
-                .form__row{
-                    .form__group{
-                        .form-btn{
+
+                .form__row {
+                    .form__group {
+                        .form-btn {
                             height: 60px;
                         }
                     }
@@ -125,12 +138,15 @@
         .container {
             .offer-block {
                 background-position-x: 430px;
-                .row-submit{
+
+                .row-submit {
                     flex-direction: column;
                     align-items: flex-start;
-                    .form__group{
+
+                    .form__group {
                         margin-bottom: 20px;
-                        &:last-child{
+
+                        &:last-child {
                             margin-top: 20px;
                         }
                     }
@@ -148,33 +164,41 @@
                 &__title {
                     font-size: 22px;
                 }
-    
+
                 &__subtitle {
                     font-size: 18px;
                 }
+
                 padding: 30px 40px;
                 background: white;
-                .offer__form{
+
+                .offer__form {
                     display: flex;
                     flex-wrap: wrap;
-                    .form__row{
+
+                    .form__row {
                         width: 100%;
                         align-items: center;
                         flex-direction: column;
-                        .form__checbox{
+
+                        .form__checbox {
                             margin-bottom: 20px;
-                            &:first-child{
+
+                            &:first-child {
                                 margin-right: 12px;
                             }
                         }
-                        .form__group{
+
+                        .form__group {
                             margin-bottom: 20px;
+
                             .form__label {
                                 font-size: 16px;
                                 display: block;
                                 margin-bottom: 6px;
                             }
-                            .form-btn{
+
+                            .form-btn {
                                 height: 60px;
                             }
                         }
@@ -189,15 +213,18 @@
 
     .offer {
         margin-top: 100px;
+
         .container {
             .offer-block {
                 &__subtitle {
                     font-size: 14px;
                 }
+
                 background-position-x: 430px;
-                .form__row{
-                    .form__group{
-                        .form-btn{
+
+                .form__row {
+                    .form__group {
+                        .form-btn {
                             padding: 10px 16px;
                         }
                     }

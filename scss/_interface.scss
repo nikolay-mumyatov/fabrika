@@ -1,18 +1,20 @@
-.section{
+.section {
     padding: 100px 0;
-    &-title{
+
+    &-title {
         font-size: 30px;
         @include bold;
         text-transform: uppercase;
         text-align: center;
     }
-    &__title{
+
+    &__title {
         margin-bottom: 100px;
     }
 }
 
 
-.button{
+.button {
     padding: 25px 45px;
     text-transform: uppercase;
     border: none;
@@ -28,7 +30,7 @@
     box-sizing: border-box;
 }
 
-input[type=checkbox]{
+input[type=checkbox] {
     display: none;
 }
 
@@ -41,13 +43,13 @@ input[type=checkbox]{
 // Адаптивная верстка.
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .input{
+    .input {
         height: 60px;
     }
 }
 
 @media (max-width: 767px) {
-    .input{
+    .input {
         height: 40px;
         padding-left: 15px;
     }
