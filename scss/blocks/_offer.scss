@@ -80,3 +80,129 @@
         }
     }
 }
+
+// Адаптивная верстка.
+
+@media (max-width: 1200px) {
+
+    .offer {
+        .container {
+            .offer-block {
+                background-position-x: 650px;
+                .form__row{
+                    .form__group{
+                        .form-btn{
+                            height: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .offer {
+        .container {
+            .offer-block {
+                padding: 60px 80px;
+                background-position-x: 72vw;
+                .form__row{
+                    .form__group{
+                        .form-btn{
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .offer {
+        .container {
+            .offer-block {
+                background-position-x: 430px;
+                .row-submit{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .form__group{
+                        margin-bottom: 20px;
+                        &:last-child{
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 575px) {
+    .offer {
+        .container {
+            .offer-block {
+                &__title {
+                    font-size: 22px;
+                }
+    
+                &__subtitle {
+                    font-size: 18px;
+                }
+                padding: 30px 40px;
+                background: white;
+                .offer__form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .form__row{
+                        width: 100%;
+                        align-items: center;
+                        flex-direction: column;
+                        .form__checbox{
+                            margin-bottom: 20px;
+                            &:first-child{
+                                margin-right: 12px;
+                            }
+                        }
+                        .form__group{
+                            margin-bottom: 20px;
+                            .form__label {
+                                font-size: 16px;
+                                display: block;
+                                margin-bottom: 6px;
+                            }
+                            .form-btn{
+                                height: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 424px) {
+
+    .offer {
+        margin-top: 100px;
+        .container {
+            .offer-block {
+                &__subtitle {
+                    font-size: 14px;
+                }
+                background-position-x: 430px;
+                .form__row{
+                    .form__group{
+                        .form-btn{
+                            padding: 10px 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

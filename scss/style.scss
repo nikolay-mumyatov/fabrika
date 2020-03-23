@@ -1,10 +1,9 @@
 @import "colors"; // Настройка цветов.
 @import "grid"; // Базовые настройка сетки.
 @import "fonts"; // Настройки шрифтов.
-@import "interface.scss"; // Базовые настройки элементов.
+@import "interface"; // Базовые настройки элементов.
+@import "blocks/menu"; // Меню сайта.
 @import "blocks/navbar"; // Шапка сайта.
 @import "blocks/hero"; // Блок hero.
 @import "blocks/offer"; // Блок offer.
-
-
-@import "media.scss"; // Адаптивная верстка.
+@import "blocks/features"; // Блок features.

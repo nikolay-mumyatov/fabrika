@@ -16,3 +16,41 @@
         @include bold;
     }
 }
+
+// Адаптивная верстка.
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero{
+        background: #f1f1f1 url('../img/hero/hero-top-bacground.png') no-repeat center left;
+        background-size: cover;
+        background-position-x: -570px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero{
+        background: #f1f1f1 url('../img/hero/hero-top-bacground.png') no-repeat center left;
+        background-size: cover;
+        background-position-x: -620px;
+        background-position-y: 25px;
+    }
+}    
+@media (max-width: 424px) {
+    .hero{
+        background: #f1f1f1 url('../img/hero/hero-top-bacground.png') no-repeat center left;
+        background-size: cover;
+        background-position-x: -700px;
+        background-position-y: -50px;
+        padding-bottom: 70px;
+
+        .container{
+            margin-top: 200px;
+        }
+        &-title{
+            font-size: 26px;
+        }
+        &__subtitle{
+            font-size: 24px;
+        }
+    }
+}
