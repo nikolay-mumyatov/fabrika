@@ -1,5 +1,6 @@
 .navbar {
     position: fixed;
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
@@ -24,6 +25,7 @@
         height: 80px;
         width: 70px;
         outline: none;
+        cursor: pointer;
 
         .menu-button__line {
             display: block;

@@ -1,0 +1,134 @@
+.catalog {
+    background-color: $bg-secondary;
+
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .catalog__card {
+            margin-bottom: 30px;
+        }
+
+        .catalog-card {
+            position: relative;
+            max-width: 570px;
+            max-height: 130px;
+            cursor: pointer;
+            overflow: hidden;
+
+            &__img {
+                max-width: 100%;
+            }
+
+            &__tag {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                padding: 10px;
+                background-color: rgba($color: #507fe1, $alpha: 0.7);
+                text-transform: uppercase;
+                color: white;
+                font-size: 12px;
+                @include bold;
+            }
+
+            .visible {
+                visibility: visible;
+                bottom: 0;
+                right: 0;
+            }
+
+            &__buttons {
+                visibility: hidden;
+                position: absolute;
+                bottom: -35px;
+                height: 30px;
+                text-align: center;
+                right: 0;
+                display: flex;
+                transition: 0.4s ease;
+
+                .fitting-button {
+                    display: block;
+                    background-color: white;
+                    color: $primary;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    border: none;
+                    padding: 10px;
+                    outline: none;
+                    cursor: pointer;
+                }
+
+                .add-button {
+                    display: block;
+                    background-color: #6a99e9;
+                    color: white;
+                    text-transform: uppercase;
+                    padding: 10px;
+                    font-size: 12px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+
+                .like-button {
+                    display: block;
+                    border: none;
+                    background-color: $primary;
+                    outline: none;
+                    padding: 6px 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// Адаптивная верстка
+
+@media (max-width: 1170px) {
+    .catalog {
+        &-block {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 586px) {
+    .catalog {
+        &-block {
+            .catalog-card {
+                &__tag {
+                    top: 10px;
+                    left: 10px;
+                    padding: 5px;
+                }
+
+                .visible {
+                    visibility: visible;
+                    bottom: 4px;
+                    right: 0;
+                }
+
+                &__buttons {
+                    bottom: -35px;
+                    height: 25px;
+
+                    .fitting-button {
+                        padding: 5px 10px;
+                    }
+
+                    .add-button {
+                        padding: 5px 10px;
+                    }
+
+                    .like-button {
+                        padding: 4px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
