@@ -20,3 +20,15 @@ $(function () {
         $(this).find(card_buttons).toggleClass('visible');
     });
 });
+
+
+// Появление кнопки в блоке "цены и выды".
+
+$(function () {
+    var priceCard = $('.price__item'),
+        priceButton = $('.price__button');
+    
+    priceCard.on('click', function(){
+        $(this).find(priceButton).toggleClass('price__button-active');
+    });
+});
