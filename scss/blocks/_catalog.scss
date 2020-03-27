@@ -84,6 +84,24 @@
             }
         }
     }
+    &-link{
+        max-width: 380px;
+        margin: auto;
+
+        .catalog__link-more{
+            display: inline-block;
+            font-size: 16px;
+            text-align: center;
+        }
+        .catalog__link-text{
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+    &__link{
+        margin-top: 30px;
+    }
 }
 
 // Адаптивная верстка

@@ -1,0 +1,16 @@
+.blog{
+    .blog-title{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .blog-link__up{
+            color: $primary;
+            font-size: 16px;
+            text-decoration: underline;
+        }
+    }
+    .blog__gruop{
+        margin-top: 70px;
+    }
+}

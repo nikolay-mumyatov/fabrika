@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .section {
     padding: 100px 0;
 
@@ -11,8 +15,16 @@
     &__title {
         margin-bottom: 100px;
     }
-}
 
+    &-title-h3 {
+        font-size: 24px;
+        @include bold;
+    }
+
+    &-title__h3 {
+        margin-right: 40px;
+    }
+}
 
 .button {
     padding: 25px 45px;
@@ -21,6 +33,7 @@
     background-color: $primary;
     color: white;
     @include bold;
+    text-decoration: none;
 }
 
 .input {
@@ -38,9 +51,47 @@ input[type=checkbox] {
     background-color: $bg-secondary;
 }
 
+// Карточки информации в блоке "blog" и "price".
+
+.section-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        max-width: 284px;
+        margin-bottom: 20px;
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+
+        .section-group__img {
+            width: 100%;
+        }
+
+        .section-group__title {
+            display: inline-block;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            padding: 30px 30px;
+            color: black;
+            width: 100%;
+        }
+    }
+}
+
 
 
 // Адаптивная верстка.
+
+@media (max-width: 1200px) {
+    .section-group {
+        justify-content: center;
+        align-items: center; 
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
     .input {
