@@ -14,10 +14,16 @@ $(function () {
 
 $(function () {
     var card = $('.catalog__card'),
-        card_buttons = $('.catalog-card__buttons');
+        cardButtons = $('.catalog-card__buttons');
         
     card.on('click', function(){
-        $(this).find(card_buttons).toggleClass('visible');
+        if ($(this).find(cardButtons).hasClass('visible')) { 
+            $(this).find(cardButtons).toggleClass('visible'); // Если класс 'visible' уже есть то убрать его.
+
+        } else {
+            $(this).find(cardButtons).toggleClass('visible'); // Если нет, то поставить.
+            card.not(this).find(cardButtons).removeClass('visible'); // Убираем класc со всех не активных элементов.
+        }
     });
 });
 
@@ -29,6 +35,11 @@ $(function () {
         priceButton = $('.price__button');
     
     priceCard.on('click', function(){
-        $(this).find(priceButton).toggleClass('price__button-active');
+        if ($(this).find(priceButton).hasClass('price__button-active')) {
+            $(this).find(priceButton).toggleClass('price__button-active'); // Если класс 'price__button-active' уже есть то убрать его.
+        } else {
+            $(this).find(priceButton).toggleClass('price__button-active'); // Если нет, то поставить.
+            priceCard.not(this).find(priceButton).removeClass('price__button-active'); // Убираем класc со всех не активных элементов.
+        }
     });
 });

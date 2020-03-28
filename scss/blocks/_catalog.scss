@@ -40,6 +40,8 @@
             }
 
             &__buttons {
+                z-index: 9;
+                cursor: pointer;
                 visibility: hidden;
                 position: absolute;
                 bottom: -35px;
