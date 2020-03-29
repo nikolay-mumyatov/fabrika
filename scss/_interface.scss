@@ -38,6 +38,10 @@ button{
     color: white;
     @include bold;
     text-decoration: none;
+    outline: none;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .input {

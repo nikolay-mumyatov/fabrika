@@ -1,0 +1,117 @@
+.steps {
+    background-color: $bg-secondary;
+
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .step {
+            position: relative;
+            text-align: center;
+
+            &::before {
+                content: '';
+                width: 107%;
+                height: 2px;
+                background-color: rgba(126, 123, 120, 0.6);
+                display: block;
+                position: absolute;
+                top: 60px;
+                right: -67%;
+            }
+
+            &:last-child {
+                &::before {
+                    display: none;
+                }
+            }
+
+            .step__title {
+                font-size: 18px;
+                @include bold;
+            }
+
+            .step__text {
+                max-width: 160px;
+                margin: auto;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .steps {
+        .step {
+            &::before {
+                width: 100%;
+                right: -60%;
+            }
+        }
+    }
+}
+
+@media (max-width: 989px) {
+    .steps {
+        &-block {
+            .step {
+                flex-basis: 33%;
+
+                &::before {
+                    width: 90%;
+                    right: -47%;
+                }
+
+                &:nth-child(3) {
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                &:last-child {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    .steps {
+        &-block {
+            .step {
+                flex-basis: 33%;
+
+                &::before {
+                    width: 81%;
+                    right: -41%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .steps {
+        &-block {
+            .step {
+                flex-basis: 100%;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            .step__margin {
+                margin-bottom: 50px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
