@@ -1,0 +1,47 @@
+.feedback{
+    background-color: $bg-secondary;
+    &-slider{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        &__item{
+            text-align: center;
+            .feedback-slider__text{
+                position: relative;
+                background-color: white;
+                padding: 20px;
+                box-sizing: border-box;
+                border-radius: 10px;
+                max-width: 333px;
+                font-size: 14px;
+                font-style: italic;
+                &::before{
+                    content: '';
+                    width: 14px;
+                    height: 14px;
+                    background-color: white;
+                    position: absolute;
+                    bottom: -7px;
+                    left: 48%;
+                    transform: rotate(45deg);
+                }
+            }
+            .feedback-slider__img{
+                display: block;
+                margin: 30px auto;
+                width: 70px;
+                height: 70px;
+                border: 2px solid $primary;
+                border-radius: 50%;
+            }
+            .feedback-slider__name{
+                display: block;
+                margin-top: 20px;
+                &:last-child{
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}
