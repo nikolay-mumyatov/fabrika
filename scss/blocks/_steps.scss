@@ -35,7 +35,6 @@
             .step__text {
                 max-width: 160px;
                 margin: auto;
-                margin-bottom: 30px;
             }
         }
     }
@@ -73,6 +72,10 @@
                     &::before {
                         display: none;
                     }
+                }
+
+                &__text{
+                    padding-bottom: 40px;
                 }
             }
         }

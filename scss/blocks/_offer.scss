@@ -3,8 +3,6 @@
 
     .container {
         .offer-block {
-            background: #ffffff url(../../img/offer/offer-bg.png) no-repeat center right;
-            background-size: contain;
             box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
             padding: 80px;
             margin-top: -230px;
@@ -20,6 +18,17 @@
                 font-size: 21px;
                 display: block;
                 margin-bottom: 48px;
+                max-width: 600px;
+            }
+
+            &_calc-bg{
+                background: #ffffff url(../../img/offer/offer-bg.png) no-repeat center right;
+                background-size: contain;
+            }
+            &_price-bg{
+                margin-top: -350px;
+                background: #ffffff url(../../img/offer/offer_2.png) no-repeat center right;
+                background-size: contain;
             }
         }
 
@@ -28,7 +37,7 @@
                 display: flex;
                 align-items: center;
                 max-width: 900px;
-                margin-bottom: 25px;
+                margin-bottom: 30px;
 
                 &last-child {
                     margin-bottom: 0px;
@@ -55,6 +64,13 @@
                     .form-btn {
                         height: 80px;
                         width: 100%;
+                    }
+
+                    .form__policy{
+                        display: block;
+                        margin-left: 45px;
+                        max-width: 350px;
+                        font-size: 14px;
                     }
                 }
 
@@ -97,17 +113,23 @@
 @media (max-width: 1200px) {
 
     .offer {
-        .container {
-            .offer-block {
-                background-position-x: 650px;
-
-                .form__row {
-                    .form__group {
-                        .form-btn {
-                            height: 80px;
-                        }
+        .offer-block {
+            .form__row {
+                .form__group {
+                    .form-btn {
+                        height: 80px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .offer {
+        .container {
+            .offer-block {
+                background-position-x: 720px;
             }
         }
     }
@@ -117,9 +139,16 @@
     .offer {
         .container {
             .offer-block {
+
+                &_calc-bg{
+                    background: white;
+                }
+                &_price-bg{
+                    margin-top: -350px;
+                    background: white;
+                }
                 padding: 60px 80px;
                 background-position-x: 72vw;
-
                 .form__row {
                     .form__group {
                         .form-btn {
@@ -137,7 +166,14 @@
     .offer {
         .container {
             .offer-block {
-                background-position-x: 430px;
+
+                &_calc-bg{
+                    background: white;
+                }
+                &_price-bg{
+                    margin-top: -350px;
+                    background: white;
+                }
 
                 .row-submit {
                     flex-direction: column;
@@ -145,9 +181,15 @@
 
                     .form__group {
                         margin-bottom: 20px;
+                        
 
                         &:last-child {
-                            margin-top: 20px;
+                            margin: 0px;
+                        }
+
+                        .form__policy{
+                            margin-left: 0px;
+                            font-size: 12px;
                         }
                     }
                 }
@@ -178,7 +220,7 @@
 
                     .form__row {
                         width: 100%;
-                        align-items: center;
+                        align-items: flex-start;
                         flex-direction: column;
 
                         .form__checbox {
@@ -226,10 +268,15 @@
                     .form__group {
                         .form-btn {
                             padding: 10px 16px;
+                            width: 100%;
+                            white-space: pre-line;
                         }
                     }
                 }
             }
         }
+    }
+    .offer_price{
+        margin-top: 0px;
     }
 }
