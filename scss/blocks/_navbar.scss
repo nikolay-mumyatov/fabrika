@@ -40,21 +40,7 @@
         }
     }
 
-    .logo {
-        .logo__text {
-            display: block;
-            font-size: 18px;
-            text-transform: uppercase;
-            @include bold;
-            margin-bottom: 5px;
-        }
 
-        .logo__description {
-            display: block;
-            font-size: 14px;
-            color: #6b6b6b;
-        }
-    }
 
     .mobile {
         text-align: right;

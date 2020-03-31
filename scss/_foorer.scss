@@ -1,0 +1,115 @@
+.footer{
+    background-color: #262626;
+    color: white;
+    padding: 40px 0px;
+    &-block{
+        display: flex;
+        justify-content: space-between;
+    flex-wrap: wrap;
+        .footer-description{
+            .footer__copyrate{
+                display: block;
+                font-size: 12px;
+                margin-top: 40px;
+            }
+        }
+        .footer__pay-info{
+            .footer__pay-logo{
+                margin-right: 30px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+        .footer-contacts{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            max-width: 200px;
+            .footer__link-phone{
+                display: block;
+                color: white;
+                font-size: 20px;
+                @include bold;
+                margin-bottom: 10px;
+            }
+            .footer__link-email{
+                display: block;
+                color: white;
+                font-size: 16px;
+                text-decoration: underline;
+                margin-bottom: 15px;
+            }
+            .footer-social{
+                .footer-social__link{
+                    margin-right: 10px;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    img{
+                        max-width: 24px;
+                        max-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Адаптивная верска.
+
+@media (max-width: 853px) {
+    .footer{
+        &-block{
+            .footer__pay-info{
+                display: flex;
+                flex-direction: column;
+                .footer__pay-logo{
+                    margin-right: 0px;
+                    margin-bottom: 15px;
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .footer{
+        &-block{
+            .footer__pay-info{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 474px) {
+    .footer{
+        &-block{
+            justify-content: center;
+            margin: auto;
+            .footer-description{
+                width: 100%;
+                .footer-logo{
+                    text-align: center;
+                    .footer__copyrate{
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .footer-contacts{
+                justify-content: center;
+                .footer__link-phone{
+                    margin-top: 30px;
+                    margin-bottom: 15px;
+                }
+                .footer__link-email{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
