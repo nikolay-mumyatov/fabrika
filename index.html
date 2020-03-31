@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/normalize.css"> <!-- Сбрасываем стили для элементов -->
+    <link rel="stylesheet" href="css/twentytwenty.css"> <!-- Подключаем слайдер блока before_after -->
+    <link rel="stylesheet" href="css/style.min.css"> <!-- Подключаем кастомные стили -->
     <title>Фабрика Skinali</title>
 </head>
 
@@ -409,6 +410,48 @@
             </div> <!-- /.container -->
         </section> <!-- /.section steps -->
 
+        <section class="section before_after">
+            <div class="container">
+                <h2 class="section-title section__title">До и после</h2>
+                <div class="before_after-slider-wrap">
+                    <div class="before_after-slider">
+                        <div class="before_after-slider__item">
+                            <div class="b_a-slider">
+                                <img src="img/before-after/sample-before.png" alt="До">
+                                <img src="img/before-after/sample-after.png" alt="После">
+                            </div>
+                        </div> <!-- /.before_after-slider__item -->
+    
+                        <div class="before_after-slider__item">
+                            <div class="b_a-slider">
+                                <img src="img/before-after/sample-before.png" alt="До">
+                                <img src="img/before-after/sample-after.png" alt="После">
+                            </div>
+                        </div> <!-- /.before_after-slider__item -->
+    
+                        <div class="before_after-slider__item">
+                            <div class="b_a-slider">
+                                <img src="img/before-after/sample-before.png" alt="До">
+                                <img src="img/before-after/sample-after.png" alt="После">
+                            </div>
+                        </div> <!-- /.before_after-slider__item -->
+    
+                    </div> <!-- /.before_after-slider -->
+    
+                    <div class="slider-arrows">
+                        <button class="arrow arrow-left">
+                            <img src="img/before-after/left_arrow.png" alt="Стрелка влево">
+                        </button>
+                        <button class="arrow arrow-right">
+                            <img src="img/before-after/right_arrow.png" alt="Стрелка вправо">
+                        </button>
+                    </div> <!-- /.slider-arrows -->
+                    
+                </div> <!-- /.before_after-slider-wrap -->
+
+            </div> <!-- /.container -->
+        </section> <!-- /.section before-after -->
+
         <section class="section feedback">
             <div class="container">
                 <h2 class="section-title section__title">Отзывы наших клиентов</h2>
@@ -518,7 +561,7 @@
         </section> <!-- /.section contacts -->
 
         <div class="map" id="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5d09cac6837b6f0173700ab8a884b5c9e3a77c8692d60118ca6471653bb0f7fe&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>
+            <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5d09cac6837b6f0173700ab8a884b5c9e3a77c8692d60118ca6471653bb0f7fe&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script> -->
         </div> <!-- /.map -->
 
         <section class="section questions">
@@ -572,7 +615,10 @@
         <!-- /.container -->
     </footer> <!-- /.footer -->
 
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

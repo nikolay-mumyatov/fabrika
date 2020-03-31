@@ -43,3 +43,21 @@ $(function () {
         }
     });
 });
+
+
+// Подключение слайдера блока befor_after с помощью библеотеки twentytwenty.
+
+$(window).load(function() {
+    $(".b_a-slider").twentytwenty({
+        before_label: 'Без скинали', // Редактируем виджеты ДО и ПОСЛЕ на слайдере.
+        after_label: 'Со скинали'
+    });
+
+    $('.before_after-slider').slick({
+        draggable: false,
+        dots: true,
+        dotsClass: 'before_after-slider__dots',
+        prevArrow: $('.arrow-left'),
+        nextArrow: $('.arrow-right')
+    });
+});

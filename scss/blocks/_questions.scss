@@ -1,14 +1,16 @@
-.questions{
-    &-block{
+.questions {
+    &-block {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         text-align: center;
-        .questions__title{
+
+        .questions__title {
             font-size: 28px;
         }
-        .questions__link{
+
+        .questions__link {
             font-size: 22px;
             text-decoration: underline;
             color: $primary;
@@ -19,14 +21,15 @@
 // Адаптивная верска.
 
 @media (max-width: 555px) {
-    .questions{
-        &-block{
-            .questions__title{
+    .questions {
+        &-block {
+            .questions__title {
                 width: 100%;
                 margin-right: 0px;
                 font-size: 24px;
             }
-            .questions__link{
+
+            .questions__link {
                 font-size: 18px;
             }
         }

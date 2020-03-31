@@ -11,8 +11,10 @@
 @import "blocks/blog"; // Блок blog.
 @import "blocks/price"; // Блок price.
 @import "blocks/steps"; // Блок steps.
+@import "blocks/before-after"; // Блок слайдера before_after.
+@import "slick"; // Подключение стилей библеотеки slick-slider для блока before_after.
 @import "blocks/feedback"; // Блок feedback.
 @import "blocks/factory"; // Блок factory.
 @import "blocks/contacts"; // Блок contacts.
 @import "blocks/questions"; // Блок questions.
-@import "foorer.scss"; // Footer страницы.
+@import "foorer"; // Footer страницы.
