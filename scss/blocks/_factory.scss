@@ -1,0 +1,68 @@
+.factory{
+    &-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        &__img{
+            margin-right: 70px;
+            img{
+                width: 100%;
+            }
+        }
+        &__text{
+            flex-basis: 50%;
+            font-size: 20px;
+        }
+    }
+}
+
+// Адаптивная верстка
+
+@media (max-width: 909px) {
+    .factory{
+        &-block{
+            &__img{
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 829px) {
+    .factory{
+        &-block{
+            align-items: flex-end;
+            &__img{
+                margin-right: 0px;
+            }
+            &__text{
+                flex-basis: 60%;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .factory{
+        &-block{
+            &__img{
+                margin-right: 0px;
+            }
+            &__text{
+                flex-basis: 60%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .factory{
+        &-block{
+            &__text{
+                flex-basis: 90%;
+            }
+        }
+    }
+}
+
