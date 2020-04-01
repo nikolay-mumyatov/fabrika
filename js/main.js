@@ -58,6 +58,7 @@ $(window).load(function() {
         dots: true,
         dotsClass: 'before_after-slider__dots',
         prevArrow: $('.arrow-left'),
-        nextArrow: $('.arrow-right')
+        nextArrow: $('.arrow-right'),
+        touchMove: false
     });
 });
