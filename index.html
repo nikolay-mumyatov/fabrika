@@ -16,13 +16,13 @@
         <div class="menu">
             <div class="container">
                 <nav class="menu__nav">
-                    <a href="#" class="menu__link">Главная</a>
-                    <a href="#" class="menu__link">Продукция</a>
-                    <a href="#" class="menu__link">Каталог</a>
-                    <a href="#" class="menu__link">Примеры работ</a>
-                    <a href="#" class="menu__link">Примерка изображений</a>
-                    <a href="#" class="menu__link">Стоимость дилерам</a>
-                    <a href="#" class="menu__link">О скинали</a>
+                    <a href="#top" class="menu__link">Главная</a>
+                    <a href="#catalog" class="menu__link">Каталог</a>
+                    <a href="#steps" class="menu__link">Этапы работ</a>
+                    <a href="#slider" class="menu__link">Примерка изображений</a>
+                    <a href="#price" class="menu__link">Стоимость</a>
+                    <a href="#factory" class="menu__link">О скинали</a>
+                    <a href="#contacts" class="menu__link">Контакты</a>
                 </nav>
             </div>
         </div> <!-- /.menu -->
@@ -52,23 +52,23 @@
                         <a class="mobile__work-email" href="mailto:info@mail.cu">info@mail.cu</a>
                     </div> <!-- /.mobile -->
 
-                    <button class="button-o navbar__button">Получить консультацию</button>
+                    <a href="#offer" class="button-o navbar__button">Получить консультацию</a>
 
                 </div> <!-- /.navbar-wrap -->
 
             </div> <!-- /.container -->
         </div> <!-- /.navbar -->
-        <div class="hero">
+        <div class="hero" id="top">
             <div class="container">
                 <h1 class="hero-title">Гарантия минимальной цены на "Скинали"</h1>
                 <span class="hero__subtitle">от 3 000 р/м2</span>
-                <button class="button hero__button">Заказать скинали</button>
+                <a href="#offer" class="button hero__button">Заказать скинали</a>
             </div>
         </div> <!-- /.hero -->
     </header> <!-- /.header -->
 
     <main>
-        <section class="offer bg-secondary">
+        <section id="offer" class="offer bg-secondary">
             <div class="container">
                 <div class="offer__block offer-block offer-block_calc-bg">
                     <h2 class="offer-block__title">Оставте заявку на расчет</h2>
@@ -77,7 +77,14 @@
                         <div class="form__row">
                             <div class="form__group">
                                 <label class="form__label">Вид стекла</label>
-                                <input type="text" class="input form__input">
+                                <input type="hidden" name="type-glass" id="select-type" value="С печатью">
+                                <div class="select form-select input">
+                                    <div class="select_cheked">С печатью</div>
+                                    <ul class="select__dropdown input">
+                                        <li class="select__option" data-value="С печатью">С печатью</li>
+                                        <li class="select__option" data-value="Без печати">Без печати</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="form__group">
                                 <label class="form__label">Ширина, см</label>
@@ -163,7 +170,7 @@
             </div> <!-- /.container -->
         </section> <!-- /.features section -->
 
-        <section class="section catalog">
+        <section class="section catalog" id="catalog">
             <div class="container">
                 <h2 class="section-title section__title">Каталог Скинали</h2>
                 <div class="catalog-block">
@@ -256,7 +263,7 @@
             </div> <!-- /.container -->
         </section> <!-- /.section catalog -->
 
-        <section class="section blog">
+        <section class="section blog" id="blog">
             <div class="container">
                 <div class="blog-title">
                     <h3 class="section-title-h3 section-title__h3">Полезное или что важно знать о скинали...</h3>
@@ -286,7 +293,7 @@
             </div> <!-- /.container -->
         </section> <!-- /.section blog -->
 
-        <section class="section price">
+        <section class="section price" id="price">
             <div class="container">
                 <h2 class="section-title section__title">Цены и виды Скинали</h2>
                 <div class="section-group">
@@ -365,7 +372,7 @@
             </div> <!-- /.container -->
         </section> <!-- /.section price -->
 
-        <section class="section steps">
+        <section class="section steps" id="steps">
             <div class="container">
                 <h2 class="section-title section__title">Этапы работ</h2>
                 <div class="steps-block">
@@ -410,7 +417,7 @@
             </div> <!-- /.container -->
         </section> <!-- /.section steps -->
 
-        <section class="section before_after">
+        <section class="section before_after" id="slider">
             <div class="container">
                 <h2 class="section-title section__title">До и после</h2>
                 <div class="before_after-slider-wrap">
@@ -493,7 +500,7 @@
                                 <input type="text" class="input form__input" placeholder="Ваше имя">
                             </div>
                             <div class="form__group">
-                                <input type="text" class="input form__input" placeholder="Ваш телефон">
+                                <input type="tel" class="input form__input" placeholder="Ваш телефон">
                             </div>
                             <div class="form__group">
                                 <input type="text" class="input form__input" placeholder="Ваша цена">
@@ -515,7 +522,7 @@
             </div> <!-- /.container -->
         </section> <!-- /.offer -->
 
-        <section class="section factory">
+        <section class="section factory" id="factory">
             <div class="container">
                 <h2 class="section-title section__title">О производстве</h2>
                 <div class="factory-block">
@@ -532,7 +539,7 @@
             </div> <!-- /.container -->
         </section> <!-- /.section factory -->
 
-        <section class="section contacts">
+        <section class="section contacts" id="contacts">
             <div class="container">
                 <h2 class="section-title section__title">Контакты</h2>
                     <div class="contacts-block">
@@ -616,6 +623,7 @@
     </footer> <!-- /.footer -->
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/jquery.event.move.js"></script>
     <script src="js/jquery.twentytwenty.js"></script>
     <script src="js/slick.min.js"></script>

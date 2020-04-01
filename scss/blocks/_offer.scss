@@ -72,6 +72,51 @@
                         max-width: 350px;
                         font-size: 14px;
                     }
+
+                    .select{
+                        position: relative;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            z-index: 9;
+                            top: 25px;
+                            right: 30px;
+                            background: url(../../img/offer/curet.png) no-repeat center;
+                            width: 20px;
+                            height: 20px;
+                            padding: 5px;
+                            cursor: pointer;
+                        }
+                        &_cheked{
+                            line-height: 80px;
+                            padding-left: 30px;
+                        }
+                        &__dropdown{
+                            display: none;
+                            position: absolute;
+                            padding-left: 0px;
+                            height: 40px;
+                            top: 80px;
+                            left: 0px;
+                            width: 100%;
+                            border: none;
+                            margin: 0px;
+                            transition: 0.5s all;
+                            .select__option{
+                                list-style: none;
+                                margin: 0;
+                                background-color: #d2e0f7;
+                                padding: 20px;
+                                &:hover{
+                                    background-color: $bg-secondary;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        &__dropdown-open{
+                            display: block;
+                        }
+                    }
                 }
 
                 .form__checbox {

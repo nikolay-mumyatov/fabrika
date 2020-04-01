@@ -1,19 +1,68 @@
+/*jshint esversion: 6 */
+
 // Появление меню.
 
 $(function () {
-    var menuBtn = $('.navbar__menu-button'),
-        menu = $('.menu');
+    let menuBtn = $('.navbar__menu-button'),
+        menu = $('.menu'),
+        menuLink = $('.menu__link');
 
     menuBtn.on('click', function(){
         menu.toggleClass('menu_active');
     });
+    menuLink.on('click', function(){
+        menu.toggleClass('menu_active');
+    });
+});
+
+
+// Плавная прокрутка по якорям.
+
+$(function () {
+
+    $("a[href^='#']").click(function(){
+        let _href = $(this).attr("href");
+        
+        if (_href == '#offer'){
+            $("html, body").animate({ 
+                scrollTop: $(_href).offset().top -220 + "px" 
+            }, 900);
+            return false;
+        } else{
+            $("html, body").animate({ 
+                scrollTop: $(_href).offset().top -80 + "px" 
+            }, 900);
+            return false;
+        }
+    });
+});
+
+
+// Подключение выпадающего списка в первой форме.
+
+ $(function () {
+     $('.select').on('click', function(){
+         $('.select__dropdown').toggleClass('select__dropdown-open');
+     });
+     $('.select__option').on('click', function(){
+         let selectValue = $(this).attr('data-value');
+         $('#select-type').val(selectValue);
+         $('.select_cheked').text(selectValue);
+     });
+ });
+
+
+// Подключение маски на input с телефоном.
+
+$(function () {
+    $('[type="tel"]').mask('+7 (999) 999-99-99');
 });
 
 
 // Появление кнопок в карточке каталога.
 
 $(function () {
-    var card = $('.catalog__card'),
+    let card = $('.catalog__card'),
         cardButtons = $('.catalog-card__buttons');
         
     card.on('click', function(){
@@ -31,7 +80,7 @@ $(function () {
 // Появление кнопки в блоке "цены и выды".
 
 $(function () {
-    var priceCard = $('.price__item'),
+    let priceCard = $('.price__item'),
         priceButton = $('.price__button');
     
     priceCard.on('click', function(){
