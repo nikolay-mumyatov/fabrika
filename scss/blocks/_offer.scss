@@ -199,6 +199,20 @@
                         .form-btn {
                             height: 60px;
                         }
+                        .select{
+                            &::after{
+                                top: 15px;
+                                right: 15px;
+                            }
+                            &_cheked{
+                                padding-left: 0px;
+                                line-height: 60px;
+                            }
+                            &__dropdown{
+                                height: 40px;
+                                top: 60px;
+                            }
+                        }
                     }
                 }
             }
@@ -218,6 +232,29 @@
                 &_price-bg{
                     margin-top: -350px;
                     background: white;
+                }
+
+                .form__row{
+                    .form__group{
+                        .select{
+                            &::after{
+                                top: 10px;
+                                right: 15px;
+                                width: 5px;
+                                height: 5px;
+                            }
+                            &_cheked{
+                                padding-left: 0px;
+                                line-height: 40px;
+                                font-size: 14px;
+                            }
+                            &__dropdown{
+                                height: 40px;
+                                top: 40px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
                 }
 
                 .row-submit {
@@ -287,6 +324,18 @@
 
                             .form-btn {
                                 height: 60px;
+                            }
+
+                            .select{
+                                width: 185px;
+                                &_cheked{
+                                    padding-left: 0px;
+                                    line-height: 40px;
+                                }
+                                &__dropdown{
+                                    height: 40px;
+                                    top: 40px;
+                                }
                             }
                         }
                     }
