@@ -1,3 +1,4 @@
+@import "normalize"; // Сбрасываем стили для элементов.
 @import "colors"; // Настройка цветов.
 @import "grid"; // Базовые настройка сетки.
 @import "fonts"; // Настройки шрифтов.
@@ -11,6 +12,7 @@
 @import "blocks/blog"; // Блок blog.
 @import "blocks/price"; // Блок price.
 @import "blocks/steps"; // Блок steps.
+@import "twentytwenty"; // Подключаем слайдер блока before_after.
 @import "blocks/before-after"; // Блок слайдера before_after.
 @import "slick"; // Подключение стилей библеотеки slick-slider для блока before_after.
 @import "blocks/feedback"; // Блок feedback.

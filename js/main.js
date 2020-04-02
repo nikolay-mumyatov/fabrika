@@ -111,3 +111,22 @@ $(window).load(function() {
         touchMove: false
     });
 });
+
+
+// Загрузка карты только когда пользователь до нее докрутит страницу.
+
+$(function () {
+    var factoryBlock = $('.factory'),
+        factoryBlockTop = factoryBlock.offset().top;
+
+        $(window).bind('scroll', function(){
+            var windowNow = $(window).scrollTop();
+
+            if (windowNow > factoryBlockTop) {
+                $('#map').html(
+                    '<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5d09cac6837b6f0173700ab8a884b5c9e3a77c8692d60118ca6471653bb0f7fe&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>'
+                );
+                $(window).unbind('scroll');
+            }
+        });
+});
