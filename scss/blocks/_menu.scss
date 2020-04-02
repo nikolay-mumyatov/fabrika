@@ -72,6 +72,14 @@
 
     .menu {
         width: 50%;
+
+        &__nav{
+            .menu__link{
+                &:nth-child(4){
+                    display: none;
+                }
+            }
+        }
     }
 }
 

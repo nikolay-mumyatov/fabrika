@@ -44,8 +44,10 @@ gulp.task('scripts', () => { // Сбор, оптимизация и минифи
 gulp.task('pages', () => { // Добавление в сборку html/php файлов.
     return gulp.src('*.html')
     .pipe(gulp.dest('build')),
-    gulp.src('./*.php')
-    .pipe(gulp.dest('build'));
+    gulp.src('*.php')
+    .pipe(gulp.dest('build')),
+    gulp.src('fonts/**')
+    .pipe(gulp.dest('build/fonts'));
 });
 
 gulp.task('image-compress', () => { // Сбор, оптимизация и минификация изображений.
@@ -65,7 +67,7 @@ gulp.task('image-compress', () => { // Сбор, оптимизация и ми�
 });
 
 gulp.task('del', () => { // Очистка папки build.
-    return del(['./build/*']);
+    return del(['build/*']);
  });
 
 gulp.task('watch', () => { // Запуск локального хостинга.

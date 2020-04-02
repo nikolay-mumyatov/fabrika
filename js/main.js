@@ -1,9 +1,7 @@
-/*jshint esversion: 6 */
-
 // Появление меню.
 
 $(function () {
-    let menuBtn = $('.navbar__menu-button'),
+    var menuBtn = $('.navbar__menu-button'),
         menu = $('.menu'),
         menuLink = $('.menu__link');
 
@@ -21,7 +19,7 @@ $(function () {
 $(function () {
 
     $("a[href^='#']").click(function(){
-        let _href = $(this).attr("href");
+        var _href = $(this).attr("href");
         
         if (_href == '#offer'){
             $("html, body").animate({ 
@@ -45,7 +43,7 @@ $(function () {
          $('.select__dropdown').toggleClass('select__dropdown-open');
      });
      $('.select__option').on('click', function(){
-         let selectValue = $(this).attr('data-value');
+         var selectValue = $(this).attr('data-value');
          $('#select-type').val(selectValue);
          $('.select_cheked').text(selectValue);
      });
@@ -62,7 +60,7 @@ $(function () {
 // Появление кнопок в карточке каталога.
 
 $(function () {
-    let card = $('.catalog__card'),
+    var card = $('.catalog__card'),
         cardButtons = $('.catalog-card__buttons');
         
     card.on('click', function(){
@@ -80,7 +78,7 @@ $(function () {
 // Появление кнопки в блоке "цены и выды".
 
 $(function () {
-    let priceCard = $('.price__item'),
+    var priceCard = $('.price__item'),
         priceButton = $('.price__button');
     
     priceCard.on('click', function(){
